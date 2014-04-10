@@ -29,6 +29,6 @@ class accountProgExam
          else
             System.out.println("현재 " +obj.name+ "님의 잔액은"+money+"원입니다.");
       }
-      System.out.println("거례종료");
+      System.out.println("거래종료");
    }
 }
