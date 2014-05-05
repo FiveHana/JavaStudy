@@ -1,0 +1,40 @@
+class selectsortWork
+    public static void main(String[] args) 
+    {   
+        int[] array = {34, 9, 12, 25, 7, 11, 16, 48, 39, 21};
+        int a;
+	    	int b;
+	    	int c;
+        int minIndex = 0;
+        int temp;
+     
+        for( a = 0 ; a < array.length ; a++)
+        {
+            minIndex = a;
+            for ( b = a ; b < array.length ; b++)
+            {
+                if( array[minIndex] > array[b] )
+                {
+                    minIndex =b;
+                }
+            }
+					temp = array[minIndex];
+					array[minIndex] = array[a];
+					array[a] = temp;
+        }
+ 
+        System.out.println("");
+		System.out.println("--------------------------------------------- ");
+        for(c = 0 ; c < array.length ;c++)
+        {
+            System.out.print(+array[c]+"/");
+        }
+		System.out.println("");
+		System.out.println("");
+		System.out.print("＃정렬완료");
+		System.out.println("");
+		System.out.println("--------------------------------------------- ");
+        
+ 
+    }
+}
